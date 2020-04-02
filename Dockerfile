@@ -1,6 +1,6 @@
 FROM nginx
 
-COPY etc/nginx/html /etc/nginx/html
+COPY etc/nginx/html /usr/share/nginx/html 
 RUN chown -R nginx:nginx /etc/nginx
 
 EXPOSE 80 443 8080
